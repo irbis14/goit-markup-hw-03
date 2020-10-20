@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --main-text-cl: #757575;
+  --accent-cl: #2196f3;
+  --black: #212121;
+  --white: #ffffff;
+  --gray: #f5f4fa;
+  --bg-dark: #2f303a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+  background-color: var(--bg-light);
+}
+
+address {
+  font-style: normal;
+}
+
+/* Задает фон */
+.white-bg {
+  background-color: var(--white);
+}
+
+.dark-bg {
+  background-color: var(--bg-dark);
+}
+
+/* Основые свойства ссылок */
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo > span {
+  color: var(--accent-cl);
+}
+
+.menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--black);
+}
+
+.contacts-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--gray);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--white);
+  background-color: var(--accent-cl);
+}
+
+.section-lable {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black);
+}
+
+.dark-bg .logo {
+  color: var(--white);
+}
+
+.contacts-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white);
+}
+
+.contacts-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
