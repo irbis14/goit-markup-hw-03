@@ -1,3 +1,12 @@
+:root {
+  --main-text-cl: #757575;
+  --accent-cl: #2196f3;
+  --black: #212121;
+  --white: #ffffff;
+  --bg-gray: #f5f4fa;
+  --bg-dark: #2f303a;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -8,21 +17,15 @@ html {
   box-sizing: inherit;
 }
 
-:root {
-  --main-text-cl: #757575;
-  --accent-cl: #2196f3;
-  --black: #212121;
-  --white: #ffffff;
-  --bg-gray: #f5f4fa;
-  --bg-dark: #2f303a;
-}
-
 h1,
 h2,
-h3,
-p {
+h3 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
 }
 
 body {
@@ -39,12 +42,8 @@ address {
   font-style: normal;
 }
 
-.container-header {
-  margin-left: auto;
-  margin-right: auto;
-  height: 80px;
-  width: 1230px;
-  background-color: aquamarine;
+img {
+  display: block;
 }
 
 /* Задает фон */
@@ -54,6 +53,15 @@ address {
 
 .dark-bg {
   background-color: var(--bg-dark);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* outline: 2px solid teal; */
 }
 
 /* Основые свойства ссылок */
@@ -73,6 +81,21 @@ address {
   margin: 0;
 }
 
+/* Header */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu .list {
+  display: flex;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -86,6 +109,10 @@ address {
   color: var(--accent-cl);
 }
 
+.header .logo {
+  margin-right: 90px;
+}
+
 .menu-item {
   font-weight: 500;
   font-size: 14px;
@@ -94,12 +121,39 @@ address {
   color: var(--black);
 }
 
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-item .link {
+  display: block;
+  /* Паддинги добавлены для большей области действия хувера */
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.cont {
+  display: flex;
+  margin-left: auto;
+}
+
 .contacts-header {
+  display: block;
+  /* Паддинги добавлены для большей области действия хувера */
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.cont-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Hero */
 
 .container-hero {
   width: 696px;
@@ -142,7 +196,26 @@ address {
   background-color: var(--accent-cl);
 }
 
-.section-lable {
+/* Наши преимущества */
+.section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.advantage-item {
+  margin-right: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.advantage-lable {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42;
@@ -151,6 +224,8 @@ address {
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -158,11 +233,28 @@ address {
   color: var(--black);
 }
 
-.team-item {
+.section-grid {
+  margin-right: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+/* Team */
+
+.card-grid {
+  margin-right: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
 }
 
 .team-member {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
@@ -170,13 +262,26 @@ address {
 }
 
 .team-job {
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.187;
 }
 
+/* Footer */
+
 .dark-bg .logo {
   color: var(--white);
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .address {
+  margin-top: 20px;
 }
 
 .contacts-adress {
@@ -191,4 +296,8 @@ address {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 10px;
 }
