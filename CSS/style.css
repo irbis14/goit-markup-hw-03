@@ -235,6 +235,10 @@ img {
 }
 
 /* Чем мы занимаемся */
+.section-example {
+  padding-bottom: 95px;
+}
+
 .section-title {
   margin-bottom: 50px;
 
@@ -287,7 +291,7 @@ img {
   color: var(--white);
 }
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
